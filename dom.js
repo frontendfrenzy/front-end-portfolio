@@ -199,3 +199,50 @@ innerDiv.addEventListener("click", function(event) {
   // Optional: Stop propagation to prevent further bubbling
   // event.stopPropagation();
 });
+
+
+
+
+
+
+let button = document.querySelector('.btn');
+//addEventListener
+function alertbtn(){
+    alert('javascript is an script language its user inter face program its have many librarys like react,angular,vue');
+}
+button.addEventListener('click',alertbtn);
+
+
+//Timers
+let bombtimer = setTimeout(()=>{
+    console.log("BOOM!");
+},500);
+// output:BOOM!
+if(Math.random() < 0.5){
+    console.log("Defused");
+    clearTimeout(bombtimer);
+}//output:Defused
+
+//Debouncing
+
+//Timeout setinterval setTimeout
+let textarea = document.querySelector("textarea");
+let timeout;
+textarea.addEventListener('input',()=>{
+    clearTimeout(timeout);
+    time = setTimeout(() => console.log('Typed!'),500);
+});
+//add textarea tag type some value then its give typed output in console
+
+
+
+let scheduled = null;
+window.addEventListener("mousemove", event => {
+    if(!scheduled){
+        setTimeout(()=>{
+            document.body.textContent = `Mouse at ${scheduled.pageX},${scheduled.pageY}`;
+            scheduled = null;
+        }, 250);
+    }
+    scheduled = event;
+});
