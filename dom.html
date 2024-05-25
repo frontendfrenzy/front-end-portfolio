@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--
+     <div id="hole-content">
+    <div class="main-heading">
+        <h1>Marvel character</h1>
+    </div>
+    <div class="content">
+        <ul>
+            <li class="list-item">Iron man</li>
+            <li  class="list-item">Captain ameriaca</li>
+            <li  class="list-item">Spiderman</li>
+            <li class="list-item">Thor</li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div id="container">
+  <div id="innerDiv">Click Me!</div>
+</div>
+
+   -->
+
+   <h1 id="main-heading">Event Listeners</h1>
+
+   <div class="container">
+
+     <div class="boxes-box-1">
+          <h1 id="heading">Example 1</h1>
+          <button class="btn-1" onclick="alert('i love javascript')">Enter</button>
+     </div>
+
+     <div class="boxes-box-2">
+        <h1 id="heading">Example 2</h1>
+        <button class="btn-2" onclick="alert('i love typescript')">Enter</button>
+   </div>
+
+   <div class="boxes-box-3">
+    <h1 id="heading">Example 3</h1>
+    <button class="btn-3" onclick="alert('i love reactjs')">Enter</button>
+</div>
+
+   </div>
+    
+<style>
+body{
+    background-color: rgb(45, 0, 151);
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 3px black;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    
+}
+
+.boxes-box-1{
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boxes-box-2{
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px black;
+    padding:  15px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boxes-box-3{
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.btn-1{
+   padding: 6px;
+   border-radius: 9px;
+   cursor: pointer;
+}
+.btn-2{
+    padding: 6px;
+   border-radius: 9px;
+   cursor: pointer;
+}
+.btn-3{
+    padding: 6px;
+   border-radius: 9px;
+   cursor: pointer;
+}
+
+
+
+
+
+
+   /*
+    .main-heading{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid grey;
+        padding: 7px;
+        border-radius: 10px;
+        background-color: wheat;
+        text-shadow: 2px 2px 3px black;
+    }
+    li{
+        list-style-type: none;
+        text-align: center;
+        padding: 10px;
+        border-radius: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid grey;
+        background-color: rgb(250, 200, 108);
+        text-shadow: 2px 2px 3px black;
+
+    }
+    .content{
+        transform: translateX(-4%);
+    
+    }
+    */
+</style>
+
+
+
+
+
+
+
+
+
+    <script src="dom.js"></script>
+</body>
+</html>
